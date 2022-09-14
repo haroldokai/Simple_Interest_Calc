@@ -1,0 +1,49 @@
+body {background-color:black;font-family:arial;color:black}
+h1{color:grey;font-family:verdana;  text-align: center; position: relative;
+top: 30px;}
+.main-div {
+width: 90%;
+height: 400px;
+background-color: white;
+border-radius: 25px;
+margin-top: 20px;
+}
+
+#ulid {
+ height: 150px;
+ width: 70%;
+ background-color: white;
+ position: relative;
+ left: 50px;
+ top: 30px;
+
+
+}
+var principal = document.getElementById("principal").value;
+var rate = document.getElementById("rate").value;
+var years = document.getElementById("years").value;
+var interest = principal * years * rate /100;
+function updateRate()
+{
+    var rateval = document.getElementById("rate").value;
+    document.getElementById("rate_val").innerText=rateval;
+}
+
+.spacing {
+position:fixed; left:220px;
+
+}
+
+.spacing_rate-value {
+position:fixed; left:280px;
+}
+
+.spacing_rate-value {
+position:relative; left:180px;
+}
+
+.footer-id {
+position:relative;
+left:40px;
+top: 100px;
+}
